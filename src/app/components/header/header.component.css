@@ -1,0 +1,12 @@
+.centrado{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.izquierda{
+    float: right;
+    border-radius: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}  

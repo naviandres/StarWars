@@ -1,0 +1,10 @@
+.ajustarTamanio{
+    width:350px;
+     height:450px;
+}
+
+.centrar{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}

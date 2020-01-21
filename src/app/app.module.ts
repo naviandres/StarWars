@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -16,7 +17,8 @@ import { BodyComponent } from './components/body/body.component';
   ],
   //modulos
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   //servicios inyectados
   providers: [],

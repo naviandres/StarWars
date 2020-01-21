@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CharactersComponent } from './characters/characters.component';
 
 
 
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    BodyComponent
+    BodyComponent,
+    CharactersComponent
   ],
   //modulos
   imports: [

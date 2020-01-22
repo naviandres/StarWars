@@ -1,0 +1,10 @@
+.logo {
+    width: 300px;
+    margin: 10px auto;
+}
+
+.column {
+    width: 300px;
+    margin: 10px;
+    float: left;
+}

@@ -1,11 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
-export class AppComponent implements OnInit {
+@Component({
+  selector: 'app-characters-component',
+  templateUrl: './characters.component.html',
+  styleUrls: ['./characters.component.css']
+})
+
+export class CharactersComponent implements OnInit {
   title = 'app.apiary.io Testing';
   //people: Observable<any>;
 
   constructor(
+
     //private starWarsService: StarWarsService
+
+
   ) { }
 
   ngOnInit() {

@@ -7,6 +7,7 @@ import { BodyComponent } from './components/body/body.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CharactersComponent } from './characters/characters.component';
 import { PageNotFountComponent } from './components/page-not-fount/page-not-fount.component';
+import { MovieComponent } from './movie/movie.component';
 
 
 
@@ -17,7 +18,8 @@ import { PageNotFountComponent } from './components/page-not-fount/page-not-foun
     HeaderComponent,
     BodyComponent,
     CharactersComponent,
-    PageNotFountComponent
+    PageNotFountComponent,
+    MovieComponent
   ],
   //modulos
   imports: [

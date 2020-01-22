@@ -1,17 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
-export class AppComponent implements OnInit {
+@Component({
+  selector: 'app-characters-component',
+  templateUrl: './characters.component.html',
+  styleUrls: ['./characters.component.css']
+})
+
+export class CharactersComponent implements OnInit {
   title = 'app.apiary.io Testing';
-  people: Observable<any>;
+  //people: Observable<any>;
 
   constructor(
-    private starWarsService: StarWarsService
+    //private starWarsService: StarWarsService;
   ) { }
 
   ngOnInit() {
     //  this.people =  this.starWarsService.getHerosByCutom('https://swapi.co/api/people');
     // this.people = this.starWarsService.getViaAjax('https://swapi.co/api/people');
-     this.people = this.starWarsService.getHeros();;
+     //this.people = this.starWarsService.getHeros();;
   }
 
   postContent() {

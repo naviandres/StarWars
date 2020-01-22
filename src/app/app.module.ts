@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CharactersComponent } from './characters/characters.component';
+import { PageNotFountComponent } from './components/page-not-fount/page-not-fount.component';
 
 
 
@@ -15,7 +16,8 @@ import { CharactersComponent } from './characters/characters.component';
     AppComponent,
     HeaderComponent,
     BodyComponent,
-    CharactersComponent
+    CharactersComponent,
+    PageNotFountComponent
   ],
   //modulos
   imports: [

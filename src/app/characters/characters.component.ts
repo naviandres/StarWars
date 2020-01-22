@@ -11,7 +11,10 @@ export class CharactersComponent implements OnInit {
   //people: Observable<any>;
 
   constructor(
-    //private starWarsService: StarWarsService;
+
+    //private starWarsService: StarWarsService
+
+
   ) { }
 
   ngOnInit() {
@@ -26,4 +29,6 @@ export class CharactersComponent implements OnInit {
     // });
   }
 }
+
+export class CharactersComponent { }
 

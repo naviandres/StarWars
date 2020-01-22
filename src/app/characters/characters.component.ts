@@ -30,5 +30,4 @@ export class CharactersComponent implements OnInit {
   }
 }
 
-export class CharactersComponent { }
 

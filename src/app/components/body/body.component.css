@@ -1,6 +1,6 @@
 .ajustarTamanio{
-    width:350px;
-     height:450px;
+    width:75%;
+     height:75%;
 }
 
 .centrar{
@@ -8,3 +8,33 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.encima{
+    position: absolute;
+    top: 0;
+    background-color: #ffffff1f;
+    overflow: hidden;
+    width: 69%;
+    height:0;
+    transition: .4s ease;
+}
+
+.efecto:hover .encima {
+    bottom: 0;
+    height: 75%;
+
+  }
+
+  .text {
+    white-space: nowrap; 
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 0.7px  #ffe81f;
+    -ms-transform: translate(-50%, -50%);
+  }

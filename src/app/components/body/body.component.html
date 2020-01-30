@@ -1,19 +1,15 @@
 <div class="container">
     <div class="row row-cols-3">
-        <div class="col">
-            <a [routerLink]="['/MovieComponent']" routerLinkActive="router-link-active">
-                <img class="ajustarTamanio" src="./assets/img/7.png">
+        
+        <div class="col efecto" *ngFor="let item of films ">
+            <a [routerLink]="['/film']" routerLinkActive="router-link-active">
+                <img class="ajustarTamanio " src="./assets/img/{{item.episode_id}}.png">
+                <div class="encima">
+                    <h5 class="text">{{item.title}}</h5>
+                </div>
             </a>
-        </div>
-        <div class="col">
-            <a [routerLink]="['/MovieComponent']" routerLinkActive="router-link-active">
-                <img class="ajustarTamanio " src="./assets/img/ReturnOfTheJediPoster1983.jpg">
-            </a>
-        </div>
-        <div class="col">
-            <a [routerLink]="['/MovieComponent']" routerLinkActive="router-link-active">
-                <img class="ajustarTamanio " src="./assets/img/The Empire Strikes Back1.png">
-            </a>
+
+          
         </div>
     </div>
 </div>

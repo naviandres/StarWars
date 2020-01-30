@@ -7,10 +7,10 @@ import { MovieComponent } from './movie/movie.component';
 import { BodyComponent } from './components/body/body.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'BodyComponent', pathMatch: 'full'},
-  { path: 'BodyComponent', component:BodyComponent},
-  { path: 'MovieComponent', component:MovieComponent}
-  //{ path: '**' , component: PageNotFountComponent}
+  { path: '', redirectTo: 'films', pathMatch: 'full'},
+  { path: 'films', component:BodyComponent},
+  { path: 'film', component:MovieComponent},
+  { path: '**' , component: PageNotFountComponent}
 ]
 
 

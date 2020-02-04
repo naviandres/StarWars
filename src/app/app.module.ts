@@ -11,8 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CharactersComponent } from './characters/characters.component';
 import { PageNotFountComponent } from './components/page-not-fount/page-not-fount.component';
 import { MovieComponent } from './movie/movie.component';
-
-
+import { PlanetsComponent } from './components/planets/planets.component';
 
 
 
@@ -23,7 +22,8 @@ import { MovieComponent } from './movie/movie.component';
     BodyComponent,
     CharactersComponent,
     PageNotFountComponent,
-    MovieComponent
+    MovieComponent,
+    PlanetsComponent
   ],
   //modulos
   imports: [

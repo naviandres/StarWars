@@ -9,7 +9,7 @@ import { BodyComponent } from './components/body/body.component';
 const routes: Routes = [
   { path: '', redirectTo: 'films', pathMatch: 'full'},
   { path: 'films', component:BodyComponent},
-  { path: 'film', component:MovieComponent},
+  { path: 'film/:id', component:MovieComponent},
   { path: '**' , component: PageNotFountComponent}
 ]
 

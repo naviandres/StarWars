@@ -10,10 +10,10 @@
     <div class="row row-cols-3">
 
         <div class="col efecto" *ngFor="let item of films | filter:filterFilms">
-            <a [routerLink]="['/film']" routerLinkActive="router-link-active">
+            <a routerLink="/film/{{item.episode_id}}" >
                 <img class="ajustarTamanio " src="./assets/img/{{item.episode_id}}.png">
                 <div class="encima">
-                    <h5 class="text">{{item.title}}</h5>
+                    <h5 class="text">{{item.title}} </h5>
                 </div>
             </a>
         </div>

@@ -11,9 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { CharactersComponent } from './characters/characters.component';
 import { PageNotFountComponent } from './components/page-not-fount/page-not-fount.component';
 import { MovieComponent } from './movie/movie.component';
+import { PlanetsComponent } from './components/planets/planets.component';
 import { FilterPipe } from './pipes/filter.pipe';
-
-
 
 
 
@@ -25,6 +24,7 @@ import { FilterPipe } from './pipes/filter.pipe';
     CharactersComponent,
     PageNotFountComponent,
     MovieComponent,
+    PlanetsComponent,
     FilterPipe
   ],
   //modulos

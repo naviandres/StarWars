@@ -12,6 +12,7 @@ export class BodyComponent implements OnInit {
 
   films: Observable<any[]>;
 
+  filterFilms = '';
 
   constructor(private filmsService: FilmsService) {
     //suscripcion

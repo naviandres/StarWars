@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 //cliente http
-import {HttpClientModule} from '@angular/common/http'
-
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CharactersComponent } from './characters/characters.component';
 import { PageNotFountComponent } from './components/page-not-fount/page-not-fount.component';
 import { MovieComponent } from './movie/movie.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 
@@ -23,13 +24,15 @@ import { MovieComponent } from './movie/movie.component';
     BodyComponent,
     CharactersComponent,
     PageNotFountComponent,
-    MovieComponent
+    MovieComponent,
+    FilterPipe
   ],
   //modulos
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   //servicios inyectados
   providers: [],

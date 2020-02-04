@@ -1,16 +1,21 @@
 <div class="container">
+    <div class="row justify-content-end">
+        <div class="col-4">
+            <input name="filterFilms" type="search" class="izquierda form-control" placeholder="Buscar..."
+                [(ngModel)]="filterFilms" />
+        </div>
+    </div>
+    <br />
+    <br />
     <div class="row row-cols-3">
-        
-        <div class="col efecto" *ngFor="let item of films ">
+
+        <div class="col efecto" *ngFor="let item of films | filter:filterFilms">
             <a [routerLink]="['/film']" routerLinkActive="router-link-active">
                 <img class="ajustarTamanio " src="./assets/img/{{item.episode_id}}.png">
                 <div class="encima">
                     <h5 class="text">{{item.title}}</h5>
                 </div>
             </a>
-
-          
         </div>
     </div>
 </div>
-

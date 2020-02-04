@@ -38,3 +38,8 @@
     -webkit-text-stroke: 0.7px  #ffe81f;
     -ms-transform: translate(-50%, -50%);
   }
+
+  .izquierda{
+    border-radius: 10px;
+    width: 73%;
+}  

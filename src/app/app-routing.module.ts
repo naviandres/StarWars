@@ -5,12 +5,16 @@ import { Routes, RouterModule} from '@angular/router';
 import { PageNotFountComponent } from './components/page-not-fount/page-not-fount.component';
 import { MovieComponent } from './movie/movie.component';
 import { BodyComponent } from './components/body/body.component';
+import { CharactersComponent } from './characters/characters.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'films', pathMatch: 'full'},
   { path: 'films', component:BodyComponent},
   { path: 'film/:id', component:MovieComponent},
-  { path: '**' , component: PageNotFountComponent}
+  { path: 'character', component:CharactersComponent},
+  { path: '**' , component: PageNotFountComponent},
+
 ]
 
 

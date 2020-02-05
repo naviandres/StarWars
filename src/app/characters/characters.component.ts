@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CharactersService } from '../services/characters.service';
+import { CharacterService } from '../services/character.service';
+import { Observable, from } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-characters-component',
@@ -9,34 +11,49 @@ import { CharactersService } from '../services/characters.service';
 })
 
 export class CharactersComponent implements OnInit {
-  title = 'app.apiary.io Testing';
-  //people: Observable<any>;
-
-  characters;
-
-  constructor(
-
-    //private starWarsService: StarWarsService
-    private charactersService: CharactersService,
-
-
-  ) {
-    this.characters = this.charactersService.getCharacters();
-    console.log(JSON.stringify(this.characters));
-   }
-   
+  constructor(private route: ActivatedRoute, private characterService: CharacterService, private location: Location) { }
 
   ngOnInit() {
-    //  this.people =  this.starWarsService.getHerosByCutom('https://swapi.co/api/people');
-    // this.people = this.starWarsService.getViaAjax('https://swapi.co/api/people');
-     //this.people = this.starWarsService.getHeros();;
+    this.getCharacter();
   }
 
-  postContent() {
-    // this.starWarsService.setHero().subscribe(() => {
-    //     this.starWarsService.getHeros();
-    // });
+
+  character: Observable<any>;
+  id: number;
+
+  getCharacter(): void {
+    this.id = +this.route.snapshot.paramMap.get('id');
+    switch (this.id) {
+      case 4:
+        this.id = 1;
+        break;
+      case 5:
+        this.id = 2;
+        break;
+      case 6:
+        this.id = 3;
+        break;
+      case 1:
+        this.id = 4;
+        break;
+      case 2:
+        this.id = 5;
+        break;
+      case 3:
+        this.id = 6;
+        break;
+
+      default:
+        break;
+    }
+    this.characterService.getCharacter(this.id)
+      .subscribe(
+        responseObject => {
+          this.character = responseObject;
+        }
+      )
   }
+
 
 
 }

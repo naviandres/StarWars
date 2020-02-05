@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'films', pathMatch: 'full'},
   { path: 'films', component:BodyComponent},
   { path: 'film/:id', component:MovieComponent},
-  { path: 'character', component:CharactersComponent},
+  { path: 'character/:id', component:CharactersComponent},
   { path: '**' , component: PageNotFountComponent},
 
 ]

@@ -13,6 +13,7 @@ import { PageNotFountComponent } from './components/page-not-fount/page-not-foun
 import { MovieComponent } from './movie/movie.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { PlanetsComponent } from './components/planets/planets.component';
+import { from } from 'rxjs';
 
 
 

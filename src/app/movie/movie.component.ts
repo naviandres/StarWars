@@ -20,33 +20,34 @@ export class MovieComponent implements OnInit {
 
 
   film: Observable<any>;
+  id;
 
   getFilm(): void {
-    var id = +this.route.snapshot.paramMap.get('id');
-    switch (id) {
+    this.id = +this.route.snapshot.paramMap.get('id');
+    switch (this.id) {
       case 4:
-        id = 1;
+        this.id = 1;
         break;
       case 5:
-        id = 2;
+        this.id = 2;
         break;
       case 6:
-        id = 3;
+        this.id = 3;
         break;
       case 1:
-        id = 4;
+        this.id = 4;
         break;
       case 2:
-        id = 5;
+        this.id = 5;
         break;
       case 3:
-        id = 6;
+        this.id = 6;
         break;
 
       default:
         break;
     }
-    this.filmService.getFilm(id)
+    this.filmService.getFilm(this.id)
       .subscribe(
         responseObject => {
           this.film = responseObject;
